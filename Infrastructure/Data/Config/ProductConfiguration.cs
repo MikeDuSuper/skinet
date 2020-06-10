@@ -15,7 +15,7 @@ namespace Infrastructure.Data.Config
             builder.Property(p => p.PictureUrl).IsRequired();
             builder.HasOne(b => b.ProductBrand).WithMany() //each brand can have many products
                     .HasForeignKey(p => p.ProductBrandId);
-            builder.HasOne(t => t.ProductType).WithMany() // each product can have many types
+            builder.HasOne(t => t.ProductType).WithMany() //each product can have many types
                     .HasForeignKey(p => p.ProductTypeId);
         }
     }
