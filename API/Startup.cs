@@ -35,6 +35,7 @@ namespace API
                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
                 });
             });
+            services.AddControllers();
             
         }
 
